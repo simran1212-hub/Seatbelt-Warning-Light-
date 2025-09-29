@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char status;
+
+    printf("Seatbelt Warning System\n");
+    printf("Is the seatbelt fastened? (Y/N): ");
+    
+    scanf(" %c", &status);
+
+    printf("\n--- Status ---\n");
+
+    if (status == 'Y' || status == 'y') {
+        printf("Seatbelt is FASTENED. Warning Light: OFF.\n");
+    } 
+    else if (status == 'N' || status == 'n') {
+        printf("SEATBELT WARNING! Warning Light: ON.\n");
+    } 
+    else {
+        printf("Invalid input. Please enter Y or N.\n");
+    }
+
+    return 0;
+}
